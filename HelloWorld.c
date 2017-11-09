@@ -22,7 +22,7 @@ int countEvens(int* arr, int size){
 
 int countBits(int num){
   int count = 0;
-  // strip leading 0
+  // strip leading 0 if present
   printf("%x\n", num);
   if(num & (1<<31))
     num = num ^ (0x1<<31);
